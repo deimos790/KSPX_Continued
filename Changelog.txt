@@ -1,0 +1,61 @@
+//-------------------------------------Command-------------------------------------//
+Cupola
+- Increased cost from 3200 to 4300 (was previously same as stock Cupola)
+- Increased entryCost from 10200 to 13600 (was previously same as stock Cupola)
+- Increased mass from 1.76 to 2.35 (was previously same as stock Cupola)
+- Decreased maxTemp from 2000 to 1000, with a skinMaxTemp of 2000 (same as stock Cupola)
+- Deleted stagingIcon
+- Updated tags
+- Increased reaction wheel torque from 9 to 15
+- Increased reaction wheel ElectricCharge rate from 0.9 to 1.2
+- Increased ElectricCharge resource quantity from 200 to 250
+- Added ModuleDataTransmitter
+
+//-------------------------------------Control-------------------------------------//
+Inline Reaction Wheel Micro
+- Decreased cost from 500 to 400
+- Changed manufacturer to STEADLER from OMB Demo Enterprises
+- Updated tags
+
+Inline Advanced Stabilizer, Micro
+- Updated tags
+- Made SAS module "standalone = True"
+
+Large Inline Reaction Wheel
+- Decreased crashTolerance from 12 to 9
+- Updated tags
+- Added torqueResponseSpeed of 30
+
+//-------------------------------------Engines-------------------------------------//
+Sisyphus Atomic Engine
+- Changed TechRequired to "nuclearPropulsion" to be compliant with stock (and made a CTT patch for it)
+- Reduced drag
+- Reduced heatConductivity to 0.06
+- Added skinInternalConductionMult of 4.0
+- Added radiatorMax of 0.35
+- Updated tags
+- Reduced heatProduction from 600 to 300 (NERV is 250)
+- Reduced Propellant LiquidFuel from 1 to 0.9, to be inline with stock NERV
+- Increased alternator rate from 12.5 to 15
+
+Hayabusa Ion Engine
+- Changed TechRequired to "ionPropulsion" to be compliant with stock (and made a CTT patch for it)
+- Updated tags
+- Added "DrawGauge = True" to ElectricCharge propellant
+- Added "minResToLeave = 1.0" to ElectricCharge propellant
+- Added patch to add stock Ion engine FX to engine.
+
+//-------------------------------------FuelTanks-------------------------------------//
+Fuel Tanks (all)
+- Updated tags
+- Corrected bulkheadProfiles (probably)
+
+//-------------------------------------Utility-------------------------------------//
+LES
+- Added decoupling effects (sound & white gas burst)
+- Increased maxTemp from 2200 to 2700
+- Added emissiveConstant of 0.95
+- Updated tags
+- LES can now be shutdown (same as stock)
+- LES can now be staged (without also decoupling)
+- Decoupling can now only be activated by Action Group hotkey
